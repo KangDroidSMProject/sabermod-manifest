@@ -6,87 +6,85 @@ License
 
 By proceeding, you agree to the terms and conditions of the license.
 
-https://github.com/SaberMod/toolchain_manifest/blob/master/LICENSE
+https://gitlab.com/SaberMod/sabermod-manifest/raw/master/LICENSE
 
 Intro and sources
 ----------------------
 
 Only supported linux is Ubuntu 14.04-14.10 (Trusty-Utopic).  Branches are separated into master and LTS.  Master branch will be for latest supported Ubuntu version as documented here.  LTS will be for long term support Ubuntu which is currently Ubuntu 14.04 Trusty.  LTS branches will also work on all currently supported systems.
-Note: arm-eabi toolchains do not need specific versions of GLIBCXX installed.  They can be used on a variety of linux systems.  These toolchains will most likely not work without modifications to the kernels and the android system.  View all the android source modifications at: https://github.com/SaberMod
+Note: arm-eabi toolchains do not need specific versions of GLIBCXX installed.  They can be used on a variety of linux systems.  These toolchains will most likely not work without modifications to the kernels and the android system.  View all the android source modifications at: https://gitlab.com/SaberMod
 
-Current source components are all from SaberMod github with the exception of upstream merges from gnu and the android open source 
+Current source components are all from SaberMod gitlab with the exception of upstream merges from gnu and the android open source 
 project (aosp)
 
-Toolchain source components separated by branch.  See build scripts to see what versions are being used. https://github.com/SaberMod/sabermod-toolchain-build
+Toolchain source components separated by branch.  See build scripts to see what versions are being used. https://gitlab.com/SaberMod/sabermod-build-scripts
 
     * GCC
-      https://github.com/SaberMod/GCC_SaberMod
+      https://gitlab.com/SaberMod/GCC
 
     * binutils
       based on gnu binutils
-      https://github.com/SaberMod/binutils-saber
+      https://gitlab.com/SaberMod/BinUtils
 
     * gdb
       based on gnu gdb
-      https://github.com/SaberMod/gdb-saber
+      https://gitlab.com/SaberMod/GDB
 
     * stock gnu binutils and gdb (used for some targets)
       https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git
 
     * build
       based on aosp build repo
-      https://github.com/SaberMod/toolchain_build
+      https://gitlab.com/SaberMod/toolchain-build
 
     * SaberMod build scripts
-      https://github.com/SaberMod/sabermod-toolchain-build
+      https://gitlab.com/SaberMod/sabermod-build-scripts
 
     * Cloog
       based on gnu cloog
-      https://github.com/SaberMod/cloog-current
+      https://gitlab.com/SaberMod/CLOOG
 
 
     * ISL
       based on gnu isl
-      https://github.com/SaberMod/isl-current
+      https://gitlab.com/SaberMod/ISL
 
     * OSL
       based on gnu osl
-      https://github.com/SaberMod/osl-saber
+      https://gitlab.com/SaberMod/OSL
 
     * gmp
       based on gnu gmp
-      https://github.com/SaberMod/gnu-gmp
+      https://gitlab.com/SaberMod/GMP
     
     * mpc
       based on gnu mpc
-      https://github.com/SaberMod/gnu-mpc
+      https://gitlab.com/SaberMod/MPC
 
     * mpfr
       based on gnu mpfr
-      https://github.com/SaberMod/gnu-mpfr
+      https://gitlab.com/SaberMod/MPFR
 
     * prebuilts
-      https://github.com/SaberMod/sm-prebuilts
+      https://gitlab.com/SaberMod/sabermod-prebuilts
 
     * sysroot
-      https://github.com/SaberMod/toolchain_sysroot
+      https://gitlab.com/SaberMod/sabermod-sysroot
 
 Prebuilt binary toolchains (in case you don't want to compile your own)
 ----------------------
 
 kernel toolchains:
-Compiled with SaberMod gcc: https://github.com/SaberMod/GCC_SaberMod
-https://github.com/SaberMod/arm-eabi-4.8
-https://github.com/SaberMod/aarch64-linux-android-4.8
-https://gitorious.org/sabermod/arm-eabi-4_9
-https://gitorious.org/sabermod/aarch64-linux-android-4_9
+Compiled with SaberMod gcc: https://gitlab.com/SaberMod/GCC_SaberMod
+https://gitlab.com/SaberMod/arm-eabi-4.9
+https://gitlab.com/SaberMod/aarch64-linux-android-4.9
 
 android system toolchains (ROM):
-Compiled with SaberMod gcc: https://github.com/SaberMod/GCC_SaberMod
-https://github.com/SaberMod/arm-androideabi-4.8
+Compiled with SaberMod gcc: https://gitlab.com/SaberMod/GCC
+https://gitlab.com/SaberMod/arm-linux-androideabi-4.8
 
 Compiled with modified AOSP gcc:
-https://github.com/SaberMod/aarch64-linux-android-4.9
+https://gitlab.com/SaberMod/aarch64-linux-android-4.9
 
 Mirrors for prebuilts:
 Note that GLIBCXX_3.4.20 is the same as master branches and GLIBCXX_3.4.19 is for LTS branches.
@@ -142,12 +140,14 @@ Installing cloog - Can be installed again
 Note that this is required to build the toolchains, NO EXCEPTIONS.  It is also usefull to have these installed for ROM building with SaberMod.  These help a lot for graphite flags, which you should be using (if not no point in using sm).  DO NOT install the package libcloog-isl-dev
 There is newer versions available that I have compiled as prebuilts to be used in /usr/lib/x86_64-linux-gnu
 download it as a zip file from here:
-https://github.com/SaberMod/sm-prebuilts/archive/master.zip
+https://gitlab.com/SaberMod/sabermod-prebuilts/repository/archive.zip
 
 cd to where you have the repository downloaded
 
+Note:  The zip name will change with new commits.  Change the name below accordingly.
+
     cd ~/Downloads
-    unzip sm-prebuilts-master.zip
+    unzip sabermod-prebuilts-"commit number".zip
     sudo cp -R sm-prebuilts-master/cloog/lib/* -f /usr/lib/x86_64-linux-gnu
 
 To install future updates, repeat this proccess.
@@ -167,7 +167,7 @@ Create the Directories - One time step
 Sync the repo
 ----------------------
 
-    repo init -u https://github.com/SaberMod/toolchain_manifest -b master
+    repo init -u https://gitlab.com/SaberMod/sabermod-manifest.git -b master
     repo sync
 
 Building toolchains
