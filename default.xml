@@ -5,7 +5,7 @@
            fetch="https://android.googlesource.com/toolchain/"
            review="https://android-review.googlesource.com/" />
   <remote  name="sm"
-           fetch="https://github.com/SaberMod/" />
+           fetch="https://gitlab.com/SaberMod/" />
   <remote  name="gnu-bin-gdb"
            fetch="git://sourceware.org/git/" />
   <default revision="master"
@@ -13,33 +13,33 @@
            sync-j="4"
            sync-c="true" />
 
-  <project path="manifest" name="toolchain_manifest" />
+  <project path="manifest" name="sabermod-manifest.git" />
   <project path="avr-libc" name="avr-libc" remote="aosp" revision="master" />
   <project path="benchmark" name="benchmark" remote="aosp" revision="master" />
-  <project path="binutils/binutils-android" name="binutils-saber" revision="2.25" />
+  <project path="binutils/binutils-android" name="BinUtils.git" revision="2.25" />
   <project path="binutils/binutils-gnu" name="binutils-gdb" remote="gnu-bin-gdb" revision="binutils-2_25-branch" />
-  <project path="build" name="toolchain_build" />
-  <project path="build-scripts" name="sabermod-toolchain-build" />
+  <project path="build" name="toolchain-build.git" />
+  <project path="build-scripts" name="sabermod-build-scripts.git" />
   <project path="ccache" name="ccache" remote="aosp" revision="master" />
   <project path="clang" name="clang" remote="aosp" revision="master" />
-  <project path="cloog/cloog-0.18.3" name="cloog-current" revision="0.18.3" />
-  <project path="cloog/cloog-0.18.3/isl" name="isl-current" />
-  <project path="cloog/cloog-0.18.3/osl" name="osl-saber" />
-  <project path="isl/isl-0.14" name="isl-current" />
-  <project path="gcc/gcc-SaberMod" name="GCC_SaberMod" revision="4.8.5" />
-  <project path="gdb/gdb-android" name="gdb-saber" revision="7.9" />
+  <project path="cloog/cloog-0.18.3" name="CLOOG.git" revision="0.18.3" />
+  <project path="cloog/cloog-0.18.3/isl" name="ISL.git" />
+  <project path="cloog/cloog-0.18.3/osl" name="OSL.git" />
+  <project path="isl/isl-0.14" name="ISL.git" />
+  <project path="gcc/gcc-SaberMod" name="GCC.git" revision="4.8.5" />
+  <project path="gdb/gdb-android" name="GDB.git" revision="7.9" />
   <project path="gdb/gdb-gnu" name="binutils-gdb" remote="gnu-bin-gdb" revision="gdb-7.9-branch" />  
-  <project path="gmp/gmp-gnu" name="gnu-gmp" revision="6.0.0" />
+  <project path="gmp/gmp-gnu" name="GMP.git" revision="6.0.0" />
   <project path="gold" name="gold" remote="aosp" revision="master" />
   <project path="llvm" name="llvm" remote="aosp" revision="master" />
   <project path="mclinker" name="mclinker" remote="aosp" revision="master" />
-  <project path="mpc/mpc-gnu" name="gnu-mpc" revision="1.0.2" />
-  <project path="mpfr/mpfr-gnu" name="gnu-mpfr" revision="3.1.2" />
+  <project path="mpc/mpc-gnu" name="MPC.git" revision="1.0.2" />
+  <project path="mpfr/mpfr-gnu" name="MPFR.git" revision="3.1.2" />
   <project path="perl" name="perl" remote="aosp" revision="master" />
   <project path="polly" name="polly" remote="aosp" revision="master" />
   <project path="python" name="python" remote="aosp" revision="master" />
   <project path="valgrind" name="valgrind" remote="aosp" revision="master" />
   <project path="yasm" name="yasm" remote="aosp" revision="master" />
-  <project path="sysroot" name="toolchain_sysroot" revision="gcc-4.8" />
-  <project path="prebuilts" name="sm-prebuilts" />
+  <project path="sysroot" name="sabermod-sysroot.git" revision="gcc-4.8" />
+  <project path="prebuilts" name="sabermod-prebuilts.git" />
 </manifest>
