@@ -33,7 +33,7 @@
   <project path="gold" name="gold" remote="aosp" revision="master" />
   <project path="llvm" name="llvm" remote="aosp" revision="master" />
   <project path="mclinker" name="mclinker" remote="aosp" revision="master" />
-  <project path="mpc/mpc-gnu" name="MPC.git" revision="1.0.2" />
+  <project path="mpc/mpc-gnu" name="MPC.git" revision="1.0.3" />
   <project path="mpfr/mpfr-gnu" name="MPFR.git" revision="3.1.2" />
   <project path="perl" name="perl" remote="aosp" revision="master" />
   <project path="polly" name="polly" remote="aosp" revision="master" />
