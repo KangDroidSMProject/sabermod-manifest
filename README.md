@@ -1,15 +1,15 @@
-SaberMod Toolchains Manifest
-=====================
+SaberMod Toolchains
+===================
 
 License
-----------------------
+-------
 
 By proceeding, you agree to the terms and conditions of the license.
 
 https://gitlab.com/SaberMod/sabermod-manifest/raw/master/LICENSE
 
 Intro and sources
-----------------------
+-----------------
 
 Only supported linux is Ubuntu 14.04-14.10 (Trusty-Utopic).  Branches are separated into master and LTS.  Master branch will be for latest supported Ubuntu version as documented here.  LTS will be for long term support Ubuntu which is currently Ubuntu 14.04 Trusty.  LTS branches will also work on all currently supported systems.
 Note: arm-eabi toolchains do not need specific versions of GLIBCXX installed.  They can be used on a variety of linux systems.  These toolchains will most likely not work without modifications to the kernels and the android system.  View all the android source modifications at: https://gitlab.com/SaberMod
@@ -72,7 +72,7 @@ Toolchain source components separated by branch.  See build scripts to see what 
       https://gitlab.com/SaberMod/sabermod-sysroot
 
 Prebuilt binary toolchains (in case you don't want to compile your own)
-----------------------
+-----------------------------------------------------------------------
 
 kernel toolchains:
 Compiled with SaberMod gcc: https://gitlab.com/SaberMod/GCC_SaberMod
@@ -91,7 +91,7 @@ Note that GLIBCXX_3.4.20 is the same as master branches and GLIBCXX_3.4.19 is fo
 https://basketbuild.com/devs/pbeeler/SaberMod/Toolchains
 
 Prerequisites - One time step
-----------------------
+-----------------------------
 
 Linux x86_64 - This source only has been tested and works on linux 64bit systems.  Tested on Ubuntu 14.04-14.10 (Trusty-Utopic).
 
@@ -135,7 +135,7 @@ So for example:
     sudo apt-get install libcap-dev texinfo automake autoconf libgmp-dev libexpat-dev python-dev build-essential gcc-multilib g++-multilib libncurses5-dev flex bison;
 
 Installing cloog - Can be installed again
-----------------------
+-----------------------------------------
 
 Note that this is required to build the toolchains, NO EXCEPTIONS.  It is also usefull to have these installed for ROM building with SaberMod.  These help a lot for graphite flags, which you should be using (if not no point in using sm).  DO NOT install the package libcloog-isl-dev
 There is newer versions available that I have compiled as prebuilts to be used in /usr/lib/x86_64-linux-gnu
@@ -153,41 +153,55 @@ Note:  The zip name will change with new commits.  Change the name below accordi
 To install future updates, repeat this proccess.
 
 Link header files for multilib - One time step
-------------------------------
+----------------------------------------------
 
 In order to enable mutilib on ubuntu there's some header files that need to be linked from asm-generic.  asm-generic already has all the files needed but gcc wants it in asm.
 
     sudo ln -s /usr/include/asm-generic /usr/include/asm;
 
 Create the Directories - One time step
-----------------------
+--------------------------------------
 
     mkdir -p ~/sm-tc && cd ~/sm-tc;
 
 Sync the repo
-----------------------
+-------------
 
     repo init -u https://gitlab.com/SaberMod/sabermod-manifest.git -b master
     repo sync
 
 Building toolchains
-----------------------
+-------------------
 
-The build scripts are no longer manitained often unless there is build breakage reported.
+Build via sabermod scripts for ease.  
 
-cd ~/sm-tc/build-scripts
+cd ~/sm-tc/smbuild/
 
-View all available scripts for targets
------------------------
+View all available arch directories and build all arch scripts.
+---------------------------------------------------------------
 
     ls
 
-To execute a build for a target
------------------------
+So for example:
 
-bash "insert name of script"
+    cd arm
+
+or stay in current directory to use the all script
+
+So for example:
+
+    bash all-arm
+
+To execute a build using a script
+---------------------------------
+
+    bash "insert name of script"
+
+So for example
+
+    bash arm-eabi-4.9
 
 Checking for updates
------------------------
+--------------------
 
     cd ~/sm-tc && repo sync;
