@@ -11,7 +11,7 @@ https://gitlab.com/SaberMod/sabermod-manifest/raw/master/LICENSE
 Intro and sources
 -----------------
 
-Only supported linux is Ubuntu 14.04-14.10 (Trusty-Utopic).  Branches are separated into master and LTS.  Master branch will be for latest supported Ubuntu version as documented here.  LTS will be for long term support Ubuntu which is currently Ubuntu 14.04 Trusty.  LTS branches will also work on all currently supported systems.
+Only supported linux is Ubuntu 14.04-14.10 (Trusty-Utopic).  ROM toolchains will be built on Ubuntu 14.04 Trusty.  If you build on a newer ubuntu system, you may need to compile the toolchains from source in order to use the toolchains instead of using the prebuilt ones.
 Note: arm-eabi toolchains do not need specific versions of GLIBCXX installed.  They can be used on a variety of linux systems.  These toolchains will most likely not work without modifications to the kernels and the android system.  View all the android source modifications at: https://gitlab.com/SaberMod
 
 Current source components are all from SaberMod gitlab with the exception of upstream merges from gnu and the android open source 
@@ -76,19 +76,19 @@ Prebuilt binary toolchains (in case you don't want to compile your own)
 
 kernel toolchains:
 Compiled with SaberMod gcc: https://gitlab.com/SaberMod/GCC_SaberMod
+https://gitlab.com/SaberMod/arm-eabi-4.8
 https://gitlab.com/SaberMod/arm-eabi-4.9
-https://gitlab.com/SaberMod/aarch64-linux-android-4.9
+https://gitlab.com/SaberMod/arm-eabi-5.0
+https://gitlab.com/SaberMod/aarch64-4.9
+https://gitlab.com/SaberMod/aarch64-5.0
 
 android system toolchains (ROM):
 Compiled with SaberMod gcc: https://gitlab.com/SaberMod/GCC
 https://gitlab.com/SaberMod/arm-linux-androideabi-4.8
+https://gitlab.com/SaberMod/arm-linux-androideabi-4.9
 
 Compiled with modified AOSP gcc:
 https://gitlab.com/SaberMod/aarch64-linux-android-4.9
-
-Mirrors for prebuilts:
-Note that GLIBCXX_3.4.20 is the same as master branches and GLIBCXX_3.4.19 is for LTS branches.
-https://basketbuild.com/devs/pbeeler/SaberMod/Toolchains
 
 Prerequisites - One time step
 -----------------------------
@@ -173,7 +173,7 @@ Sync the repo
 Building toolchains
 -------------------
 
-Build via sabermod scripts for ease.  
+Build via sabermod scripts for ease.
 
 cd ~/sm-tc/smbuild/
 

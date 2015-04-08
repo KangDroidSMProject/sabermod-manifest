@@ -6,6 +6,8 @@
            review="https://android-review.googlesource.com/" />
   <remote  name="sm"
            fetch="https://gitlab.com/SaberMod/" />
+  <remote  name="smhub"
+           fetch="https://github.com/SaberMod/" />
   <remote  name="gnu-bin-gdb"
            fetch="git://sourceware.org/git/" />
   <default revision="master"
@@ -26,7 +28,7 @@
   <project path="cloog/cloog-0.18.3/isl" name="ISL.git" />
   <project path="cloog/cloog-0.18.3/osl" name="OSL.git" />
   <project path="isl/isl-0.14" name="ISL.git" />
-  <project path="gcc/gcc-SaberMod" name="GCC.git" revision="4.8.5" />
+  <project path="gcc/gcc-SaberMod" name="GCC_SaberMod" remote="smhub" revision="4.8.5" />
   <project path="gdb/gdb-android" name="GDB.git" revision="7.9" />
   <project path="gdb/gdb-gnu" name="binutils-gdb" remote="gnu-bin-gdb" revision="gdb-7.9-branch" />  
   <project path="gmp/gmp-gnu" name="GMP.git" revision="6.0.0" />
