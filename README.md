@@ -11,7 +11,7 @@ https://gitlab.com/SaberMod/sabermod-manifest/raw/master/LICENSE
 Intro and sources
 -----------------
 
-Only supported linux is Ubuntu 14.04-14.10 (Trusty-Utopic).  ROM toolchains will be built on Ubuntu 14.04 Trusty.  If you build on a newer ubuntu system, you may need to compile the toolchains from source in order to use the toolchains instead of using the prebuilt ones.
+Only supported linux is Ubuntu 14.04-15.04 (Trusty-Vivid).  ROM toolchains will be built on Ubuntu 14.04 Trusty.  If you build on a newer ubuntu system, you may need to compile the toolchains from source in order to use the toolchains instead of using the prebuilt ones.
 Note: arm-eabi toolchains do not need specific versions of GLIBCXX installed.  They can be used on a variety of linux systems.  These toolchains will most likely not work without modifications to the kernels and the android system.  View all the android source modifications at: https://gitlab.com/SaberMod
 
 Current source components are all from SaberMod gitlab with the exception of upstream merges from gnu and the android open source 
@@ -98,6 +98,9 @@ Tested on Ubuntu the following packages are available:
     * libncurses5-dev
       http://download.gna.org/pdbv/demo_html/demo_2.0.10/package/libncurses5-dev_5.4-4.html
 
+    * libtool
+      https://www.gnu.org/software/libtool/
+
     * libcap-dev
       Installs a missing header capability.h file.
 
@@ -118,7 +121,7 @@ Tested on Ubuntu the following packages are available:
 
 So for example:
 
-    sudo apt-get install libcap-dev texinfo automake autoconf libgmp-dev libexpat-dev python-dev build-essential gcc-multilib g++-multilib libncurses5-dev flex bison;
+    sudo apt-get install libcap-dev texinfo automake autoconf libgmp-dev libexpat-dev python-dev build-essential gcc-multilib g++-multilib libncurses5-dev flex bison libtool;
 
 Installing cloog - Can be installed again
 -----------------------------------------
