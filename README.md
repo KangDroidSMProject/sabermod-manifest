@@ -74,21 +74,7 @@ Toolchain source components separated by branch.  See build scripts to see what 
 Prebuilt binary toolchains (in case you don't want to compile your own)
 -----------------------------------------------------------------------
 
-kernel toolchains:
-Compiled with SaberMod gcc: https://gitlab.com/SaberMod/GCC_SaberMod
-https://gitlab.com/SaberMod/arm-eabi-4.8
-https://gitlab.com/SaberMod/arm-eabi-4.9
-https://gitlab.com/SaberMod/arm-eabi-5.0
-https://gitlab.com/SaberMod/aarch64-4.9
-https://gitlab.com/SaberMod/aarch64-5.0
-
-android system toolchains (ROM):
-Compiled with SaberMod gcc: https://gitlab.com/SaberMod/GCC
-https://gitlab.com/SaberMod/arm-linux-androideabi-4.8
-https://gitlab.com/SaberMod/arm-linux-androideabi-4.9
-
-Compiled with modified AOSP gcc:
-https://gitlab.com/SaberMod/aarch64-linux-android-4.9
+https://sabermod.net
 
 Prerequisites - One time step
 -----------------------------
