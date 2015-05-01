@@ -42,6 +42,6 @@
   <project path="python" name="python" remote="aosp" revision="master" />
   <project path="valgrind" name="valgrind" remote="aosp" revision="master" />
   <project path="yasm" name="yasm" remote="aosp" revision="master" />
-  <project path="sysroot" name="sabermod-sysroot.git" revision="gcc-4.8" />
+  <project path="sysroot" name="sabermod-sysroot.git" revision="gcc-4.9" />
   <project path="prebuilts" name="sabermod-prebuilts.git" />
 </manifest>
