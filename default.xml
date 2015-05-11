@@ -36,7 +36,7 @@
   <project path="llvm" name="llvm" remote="aosp" revision="master" />
   <project path="mclinker" name="mclinker" remote="aosp" revision="master" />
   <project path="mpc/mpc-gnu" name="MPC.git" />
-  <project path="mpfr/mpfr-gnu" name="MPFR.git" revision="3.1.2" />
+  <project path="mpfr/mpfr-gnu" name="MPFR.git" />
   <project path="perl" name="perl" remote="aosp" revision="master" />
   <project path="polly" name="polly" remote="aosp" revision="master" />
   <project path="python" name="python" remote="aosp" revision="master" />
