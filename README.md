@@ -11,7 +11,7 @@ https://gitlab.com/SaberMod/sabermod-manifest/raw/master/LICENSE
 Intro and sources
 -----------------
 
-Only supported linux is Ubuntu 14.04-15.04 (Trusty-Vivid).  ROM toolchains will be built on Ubuntu 14.04 Trusty.  If you build on a newer ubuntu system, you may need to compile the toolchains from source in order to use the toolchains instead of using the prebuilt ones.
+Only supported linux is Ubuntu 14.04-14.10 (Trusty-Utopic).  ROM toolchains will be built on Ubuntu 14.04 Trusty.  If you build on newer ubuntu systems, you may need to use the prebuilt toolchains.
 Note: arm-eabi toolchains do not need specific versions of GLIBCXX installed.  They can be used on a variety of linux systems.  These toolchains will most likely not work without modifications to the kernels and the android system.  View all the android source modifications at: https://gitlab.com/SaberMod
 
 Current source components are all from SaberMod gitlab with the exception of upstream merges from gnu and the android open source 
@@ -70,11 +70,6 @@ Toolchain source components separated by branch.  See build scripts to see what 
 
     * sysroot
       https://gitlab.com/SaberMod/sabermod-sysroot
-
-Prebuilt binary toolchains (in case you don't want to compile your own)
------------------------------------------------------------------------
-
-https://sabermod.net
 
 Prerequisites - One time step
 -----------------------------
