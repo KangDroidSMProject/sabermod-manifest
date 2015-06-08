@@ -123,23 +123,14 @@ So for example:
 
     sudo apt-get install libcap-dev texinfo automake autoconf libgmp-dev libexpat-dev python-dev build-essential gcc-multilib g++-multilib libncurses5-dev flex bison libtool gawk;
 
-Installing cloog - Can be installed again
------------------------------------------
+Installing Host libraries - Can be installed again with updates
+---------------------------------------------------------------
 
-Note that this is required to build the toolchains, NO EXCEPTIONS.  It is also usefull to have these installed for ROM building with SaberMod.  These help a lot for graphite flags, which you should be using (if not no point in using sm).  DO NOT install the package libcloog-isl-dev
-There is newer versions available that I have compiled as prebuilts to be used in /usr/lib/x86_64-linux-gnu
-download it as a zip file from here:
-https://gitlab.com/SaberMod/sabermod-prebuilts/repository/archive.zip
+Note that this is required to build the toolchains, and also to use when compiling ROMs and kernels, NO EXCEPTIONS.
 
-cd to where you have the repository downloaded
+See the README here for prebuilt libs: https://bitbucket.org/xanaxdroid/sabermod-prebuilts/src
 
-Note:  The zip name will change with new commits.  Change the name below accordingly.
-
-    cd ~/Downloads
-    unzip sabermod-prebuilts-"commit number".zip
-    sudo cp -R sm-prebuilts-master/cloog/lib/* -f /usr/lib/x86_64-linux-gnu
-
-To install future updates, repeat this proccess.
+For future updates, repeat this proccess when there is a update on the prebuilts repository.
 
 Link header files for multilib - One time step
 ----------------------------------------------
