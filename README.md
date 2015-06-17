@@ -128,8 +128,6 @@ Installing Host libraries - Can be installed again with updates
 
 Note that this is required to build the toolchains, and also to use when compiling ROMs and kernels, NO EXCEPTIONS.
 
-See the README here for prebuilt libs: https://bitbucket.org/xanaxdroid/sabermod-prebuilts/src
-
 For future updates, repeat this proccess when there is a update on the prebuilts repository.
 
 Link header files for multilib - One time step
