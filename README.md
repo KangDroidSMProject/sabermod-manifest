@@ -74,7 +74,7 @@ Toolchain source components separated by branch.  See build scripts to see what 
 Prebuilt binary toolchains (in case you don't want to compile your own)
 -----------------------------------------------------------------------
 
-http://sabermod.net
+https://goo.gl/aoSksJ
 
 Prerequisites - One time step
 -----------------------------
