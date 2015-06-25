@@ -130,6 +130,13 @@ Note that this is required to build the toolchains, and also to use when compili
 
 For future updates, repeat this proccess when there is a update on the prebuilts repository.
 
+Download latest prebuilts updates from http://sabermod.com/prebuilt-libs/
+
+Extract files to root / of your system
+You can use a root file explorer such as nautilus (sudo nautilus)
+
+Done.
+
 Link header files for multilib - One time step
 ----------------------------------------------
 
