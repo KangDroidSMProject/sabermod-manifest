@@ -29,7 +29,7 @@
   <project path="cloog/cloog-0.18.3/osl" name="OSL.git" />
   <project path="isl/isl-0.14.x" name="ISL.git" revision="0.14" />
   <project path="isl/isl-0.15" name="ISL.git" revision="master" />
-  <project path="gcc/gcc-SaberMod" name="GCC_SaberMod" remote="smhub" revision="4.9.3" />
+  <project path="gcc/gcc-SaberMod" name="GCC_SaberMod" remote="smhub" revision="4.9.4" />
   <project path="gdb/gdb-android" name="GDB.git" revision="7.9" />
   <project path="gdb/gdb-gnu" name="binutils-gdb" remote="gnu-bin-gdb" revision="gdb-7.9-branch" />  
   <project path="gmp/gmp-gnu" name="GMP.git" />
