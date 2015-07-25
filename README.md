@@ -117,11 +117,14 @@ Tested on Ubuntu the following packages are available:
       Needed for gdb compilation when it uses -lexpat (and it does use it).
 
     * python-dev
-      Needed to use --with-python
+      Needed to use --with-python\
+
+    * libstdc++
+      Extra files for c++/g++
 
 So for example:
 
-    sudo apt-get install libcap-dev texinfo automake autoconf libgmp-dev libexpat-dev python-dev build-essential gcc-multilib g++-multilib libncurses5-dev flex bison libtool gawk;
+    sudo apt-get install libcap-dev texinfo automake autoconf libgmp-dev libexpat-dev python-dev build-essential gcc-multilib g++-multilib libncurses5-dev flex bison libtool gawk libstdc++-dev;
 
 Installing Host libraries - Can be installed again with updates
 ---------------------------------------------------------------
