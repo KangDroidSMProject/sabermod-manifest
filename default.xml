@@ -25,9 +25,8 @@
   <project path="ccache" name="ccache" remote="aosp" revision="master" />
   <project path="clang" name="clang" remote="aosp" revision="master" />
   <project path="cloog/cloog-0.18.3" name="CLOOG.git" revision="0.18.3" />
-  <project path="cloog/cloog-0.18.3/isl" name="ISL.git" revision="0.14" />
+  <project path="cloog/cloog-0.18.3/isl" name="ISL.git" revision="gcc-5" />
   <project path="cloog/cloog-0.18.3/osl" name="OSL.git" />
-  <project path="isl/isl-0.14.x" name="ISL.git" revision="0.14" />
   <project path="isl/isl-0.15" name="ISL.git" revision="gcc-5" />
   <project path="gcc/gcc-SaberMod" name="GCC_SaberMod" remote="smhub" revision="4.9.4" />
   <project path="gdb/gdb-android" name="GDB.git" revision="7.10" />
