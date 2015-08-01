@@ -24,7 +24,7 @@
   <project path="smbuild" name="sabermod-build-scripts.git" />
   <project path="ccache" name="ccache" remote="aosp" revision="master" />
   <project path="clang" name="clang" remote="aosp" revision="master" />
-  <project path="cloog/cloog-0.18.4" name="CLOOG.git" revision="0.18.3" />
+  <project path="cloog/cloog-0.18.4" name="CLOOG.git" revision="0.18.4" />
   <project path="cloog/cloog-0.18.4/isl" name="ISL.git" revision="gcc-5" />
   <project path="cloog/cloog-0.18.4/osl" name="OSL.git" />
   <project path="isl/isl-0.15" name="ISL.git" revision="gcc-5" />
