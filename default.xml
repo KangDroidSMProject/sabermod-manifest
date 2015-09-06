@@ -24,13 +24,11 @@
   <project path="smbuild" name="sabermod-build-scripts.git" />
   <project path="ccache" name="ccache" remote="aosp" revision="master" />
   <project path="clang" name="clang" remote="aosp" revision="master" />
-  <project path="cloog/cloog-0.18.4" name="CLOOG.git" revision="0.18.3" />
+  <project path="cloog/cloog-0.18.4" name="CLOOG.git" revision="0.18.4" />
   <project path="cloog/cloog-0.18.4/isl" name="ISL.git" revision="gcc-5" />
   <project path="cloog/cloog-0.18.4/osl" name="OSL.git" />
   <project path="isl/isl-0.15" name="ISL.git" revision="gcc-5" />
   <project path="gcc/gcc-SaberMod" name="GCC_SaberMod" remote="smhub" revision="4.9.4" />
-  <project path="gdb/gdb-android" name="GDB.git" revision="7.10" />
-  <project path="gdb/gdb-gnu" name="binutils-gdb" remote="gnu-bin-gdb" revision="gdb-7.10-branch" />  
   <project path="gmp/gmp-gnu" name="GMP.git" />
   <project path="gold" name="gold" remote="aosp" revision="master" />
   <project path="llvm" name="llvm" remote="aosp" revision="master" />
