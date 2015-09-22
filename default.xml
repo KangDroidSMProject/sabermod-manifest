@@ -22,7 +22,7 @@
   <project path="binutils/binutils-gnu" name="binutils-gdb" remote="gnu-bin-gdb" revision="binutils-2_25-branch" />
   <project path="build" name="toolchain-build.git" />
   <project path="smbuild" name="sabermod-build-scripts.git" >
-    <copyfile src="smbuild/build-tc" dest="build-tc" />
+    <copyfile src="build-tc" dest="build-tc" />
   </project>
   <project path="ccache" name="ccache" remote="aosp" revision="master" />
   <project path="clang" name="clang" remote="aosp" revision="master" />
