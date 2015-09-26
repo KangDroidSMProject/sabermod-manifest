@@ -27,11 +27,7 @@ Toolchain source components separated by branch.  See build scripts to see what 
       based on gnu binutils
       https://gitlab.com/SaberMod/BinUtils
 
-    * gdb
-      based on gnu gdb
-      https://gitlab.com/SaberMod/GDB
-
-    * stock gnu binutils and gdb (used for some targets)
+    * stock gnu binutils (used for experimental/unsupported targets)
       https://sourceware.org/git/gitweb.cgi?p=binutils-gdb.git
 
     * build
@@ -108,24 +104,21 @@ Tested on Ubuntu the following packages are available:
     * texinfo
       Program needed to create texi files.
 
-     * automake and autoconf
+    * automake and autoconf
       Two programs needed to configure the individual build components automatically.
 
     * libgmp-dev
       Needed for cloog to compile (graphite flags tools)
 
-    * libexpat-dev
-      Needed for gdb compilation when it uses -lexpat (and it does use it).
-
     * python-dev
-      Needed to use --with-python\
+      Needed to use --with-python
 
     * libstdc++
       Extra files for c++/g++
 
 So for example:
 
-    sudo apt-get install libcap-dev texinfo automake autoconf libgmp-dev libexpat-dev python-dev build-essential gcc-multilib g++-multilib libncurses5-dev flex bison libtool gawk libstdc++-dev;
+    sudo apt-get install libcap-dev texinfo automake autoconf libgmp-dev python-dev build-essential gcc-multilib g++-multilib libncurses5-dev flex bison libtool gawk libstdc++-dev;
 
 Installing Host libraries - Can be installed again with updates
 ---------------------------------------------------------------
