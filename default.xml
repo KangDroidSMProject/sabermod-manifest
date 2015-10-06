@@ -31,4 +31,5 @@
   <project path="mpc/mpc-gnu" name="MPC.git" />
   <project path="mpfr/mpfr-gnu" name="MPFR.git" />
   <project path="sysroot" name="sabermod-sysroot.git" revision="gcc-4.9" />
+  <project path="prebuilts" name="sabermod-prebuilts.git" />
 </manifest>
