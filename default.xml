@@ -21,7 +21,7 @@
   <project path="binutils/binutils-android" name="BinUtils.git" revision="2.25" />
   <project path="binutils/binutils-gnu" name="binutils-gdb" remote="gnu-bin-gdb" revision="binutils-2_25-branch" />
   <project path="build" name="toolchain-build.git" />
-  <project path="smbuild" name="sabermod-build-scripts" remote="kanghub"revision="osx/newest" >
+  <project path="smbuild" name="sabermod-build-scripts" remote="kanghub" revision="osx/newest" >
     <copyfile src="build-tc" dest="build-tc" />
   </project>
   <project path="cloog/cloog-0.18.4" name="CLOOG.git" revision="0.18.4" />
